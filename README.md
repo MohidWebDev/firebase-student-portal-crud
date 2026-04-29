@@ -1,16 +1,12 @@
-# React + Vite
+# firebase-student-portal-crud
+Real-Time Data Sync: Implements Firebase's onSnapshot listener to ensure the student list updates automatically across all users whenever a record is added, edited, or removed.  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Persistent Firestore Integration: Successfully connects the frontend to a cloud-hosted NoSQL database, utilizing addDoc, updateDoc, and deleteDoc for robust data persistence.  
 
-Currently, two official plugins are available:
+Advanced Modal Logic: Features a reusable Modal component that manages its own visibility state (isOpen) and renders children dynamically, providing a professional "popup" experience for data entry.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Dual-Mode Form Processing: Utilizes a single StudentForm component that intelligently toggles between "Add" and "Update" modes based on the presence of an editId.  
 
-## React Compiler
+State-Driven Lifecycle Management: Effectively uses the useEffect hook to manage the database connection and the useState hook to track form inputs and the student list simultaneously.  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Comprehensive Student Profiling: captures and renders detailed student information, including first/last names, CNIC (national identity), and contact details.
